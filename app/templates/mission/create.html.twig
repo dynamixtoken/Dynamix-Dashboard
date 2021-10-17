@@ -1,0 +1,108 @@
+{% extends 'base.html.twig' %}
+
+{% block filAriane %}
+    <li class="breadcrumb-item text-muted">Mission</li>
+    <li class="breadcrumb-item"><span class="bullet bg-gray-200 w-5px h-2px"></span></li>
+    <li class="breadcrumb-item text-dark">Create a new mission</li>
+{% endblock %}
+
+{% block body %}
+    <main>
+        <h1 style="margin-left: 30px">Create a New Mission</h1>
+
+        <div id="kt_content_container" class="container-xxl">
+            <!--begin::Row-->
+            <div class="row g-5 g-xl-8">
+                <div class="col-xl-6">
+                    <div class="card card-xl-stretch mb-xl-8">
+                        <div class="card-header align-items-center border-0 mt-4">
+                            <h3 class="card-title align-items-start flex-column">
+                                <span class="fw-bolder text-dark">Buyer</span>
+                                <span class="text-muted mt-1 fw-bold fs-7">Who buy</span>
+                            </h3>
+                        </div>
+
+                        <div class="card-body pt-3">
+                            <form id="kt_modal_new_target_form" class="form" action="#">
+                                <div class="d-flex flex-column mb-8 fv-row">
+                                    <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                        <span class="required">Target Title</span>
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+                                </div>
+                                <div class="d-flex flex-column mb-8 fv-row">
+                                    <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                        <span class="required">Target Title</span>
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+                                </div>
+                                <div class="d-flex flex-column mb-8 fv-row">
+                                    <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                        <span class="required">Target Title</span>
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-xl-6">
+                    <div class="card card-xl-stretch mb-5 mb-xl-8">
+                        <div class="card-header align-items-center border-0 mt-4">
+                            <h3 class="card-title align-items-start flex-column">
+                                <span class="fw-bolder text-dark">Seller</span>
+                                <span class="text-muted mt-1 fw-bold fs-7">Who sell</span>
+                            </h3>
+                        </div>
+
+                        <div class="card-body pt-3">
+                            <form id="kt_modal_new_target_form" class="form" action="#">
+                                <div class="d-flex flex-column mb-8 fv-row">
+                                    <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                        <span class="required">Target Title</span>
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+                                </div>
+                                <div class="d-flex flex-column mb-8 fv-row">
+                                    <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                        <span class="required">Target Title</span>
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+                                </div>
+                                <div class="d-flex flex-column mb-8 fv-row">
+                                    <label class="d-flex align-items-center fs-6 fw-bold mb-2">
+                                        <span class="required">Target Title</span>
+                                        <i class="fas fa-exclamation-circle ms-2 fs-7" data-bs-toggle="tooltip" title="Specify a target name for future usage and reference"></i>
+                                    </label>
+                                    <input type="text" class="form-control form-control-solid" placeholder="Enter Target Title" name="target_title" />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="kt_content_container" class="container-xxl">
+            <div class="card mb-5 mb-xl-8">
+                <div class="card-header border-0 pt-5">
+                    <h3 class="card-title align-items-start flex-column">
+                        <span class="card-label fw-bolder fs-3 mb-1">Mission Description</span>
+                    </h3>
+                </div>
+                <div class="card-body pt-3">
+                    <div class="table-responsive">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
