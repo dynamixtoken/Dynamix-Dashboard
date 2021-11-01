@@ -794,10 +794,18 @@
 										
 					const web3 = new Web3(provider);
 					const accounts = await web3.eth.getAccounts();
+					const byteCode = await web3.eth.getCode(addrMission);
+
+					if(!missionbyteCode.endsWith(byteCode.replace("0x", ""))) {
+						errorMsg("Fatal Error, Please contact dev team");
+						return;
+					}
+					
 					wallet = accounts[0];
 					
 					ethersProvider = new ethers.providers.Web3Provider(provider, 'any');
 					contract = new ethers.Contract(addrMission, missionABI, ethersProvider.getSigner());
+					
 					contractMission = contract.connect(ethersProvider.getSigner());
 				
 					await missionInit();
@@ -830,7 +838,7 @@
 					buyerHasFundedMission = info[6];
 					buyerHasPaidMission = info[7];
 					sellerHasAcceptedMission = info[8];
-					console.log(buyerHasCanceledMission, buyerHasFundedMission, buyerHasPaidMission, sellerHasAcceptedMission);
+
 					$('#buyerName').text(buyer.name);
 					$('#buyerWallet').text(addrFormat(buyer.wallet));
 					$('#buyerWallet').attr('href', "https://bscscan.com/address/" + buyer.wallet);
